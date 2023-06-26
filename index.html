@@ -1,28 +1,23 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flatiron Task Lister</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO APP</title>
   <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-  <div id="main-content">
-    <h1>Task Lister Lite™️</h1>
-
-    <form id="create-task-form" action="" method="POST">
-      <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+  <div class="container">
+    <h1>TODO APP</h1>
+    <h2>ADD ITEM</h2>
+    <form action="">
+      <input type="text" id="todo-text" placeholder="Enter a task here">
+      <input type="submit" value="ADD">
     </form>
-
-    <div id="list">
-      <h2>My Todos</h2>
-      <ul id="tasks">
-      </ul>
-    </div>
-
-    <script src="./src/index.js"></script>
+    <h2>TODO</h2>
+    <ul id="todos-list"></ul>
   </div>
-
+  <script src="./index.js"></script>
 </body>
 </html>
